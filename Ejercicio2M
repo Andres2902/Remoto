@@ -1,0 +1,25 @@
+#Escriba un programa que simule un juego en el que dos jugadores tiran un dado. El 
+#que saque el valor más alto, gana. Si el valor es el mismo, empatan.
+#ara ello, su algoritmo debe solicitar los nombres a los dos jugadores, simular con el uso de 
+#la librería random (import random), los dos números generados de manera aleatoria e 
+#iprimir un mensaje indicando si hay un ganador quién es el ganador o si hay un empate de 
+#iual forma se debe generar un mensaje
+
+from random import*
+jugador1 = input("Ingrese el nombre deñ jugador 1: ")
+jugador2 = input("Ingrese el nombre del jugador 2: ")
+
+num1 = randint(1,6)
+num2 = randint(1,6)
+
+print("El jugador ", jugador1, "ha sacado: ", num1)
+print("el jugador ", jugador2, "ha sacad: ", num2)
+
+if num1 > num2:
+    print("Ha ganado: ", jugador1)
+
+elif num1 < num2:
+    print("Ha ganado: ", jugador2)
+
+elif num1 == num2:
+    print("Han empatado")
